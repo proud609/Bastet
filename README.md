@@ -28,3 +28,19 @@ Bastet/
 ```
 
 ## How to install
+## Local n8n Setup
+
+### Prerequisites
+
+- Docker installed on your machine
+- Docker Compose installed on your machine
+
+### Installation Steps
+
+1. Start n8n:
+
+```bash
+docker compose up -d
+```
+
+2. Access the n8n dashboard, Open your browser and navigate to `http://localhost:5678`
