@@ -1,7 +1,7 @@
 # Submission Guidelines
 
 ## Types of Contributions (Please select one)  
-- [ ]Adding a New vulnerabilities Type
+- [ ] Adding a New vulnerabilities Type
 - [ ] Add Contracts
 - [ ] Contracts Fixe & Improvement
 - [ ] Optimize Workflow
@@ -41,6 +41,6 @@ Please place the submitted contract in the correct folder based on its type and 
 
 - audit-competitions-findings/ : 
 [yyyy-mm-contest_name-contract_name]
-- on-chain-vulnerabilities/ : [chain]_[address]_[contract_name].sol
+- on-chain-vulnerabilities/ : [chain-address-contract_name].sol
 - audit-competitions-findings/: 
-[chain]_[address]_[contract_name].sol
+[chain-address-contract_name].sol
