@@ -47,3 +47,9 @@ docker compose up -d
 2. Access the n8n dashboard, Open your browser and navigate to `http://localhost:5678`
 
 3. Create a new workflow, import the workflow from the `n8n/workflows` directory.
+
+4. Click the OpenAI node, and add your OpenAI API key.
+
+5. Click the Save button to save the workflow.
+
+6. Click the Run button to run the workflow.
