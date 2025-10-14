@@ -17,7 +17,7 @@ jobs:
   bastet:
     runs-on: ubuntu-latest
     container:
-      image: docker:24.0.5
+      image: ubuntu:22.04
       options: --memory="6g"
     steps:
       - name: Checkout code
