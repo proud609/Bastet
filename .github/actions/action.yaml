@@ -81,21 +81,6 @@ runs:
       run: |
         docker-compose -f docker-compose.cicd.yml up -d n8n bastet
     
-    - name: Wait for services to be ready
-      shell: bash
-      working-directory: ../bastet-cicd
-      run: |
-        for i in {1..30}; do
-          if docker-compose -f docker-compose.cicd.yml exec -T bastet test -f /app/cli/main.py 2>/dev/null; then
-            echo "Services are ready"
-            exit 0
-          fi
-          echo "Waiting for services... ($i/30)"
-          sleep 2
-        done
-        echo "Services failed to start"
-        exit 1
-    
     - name: Copy project to Bastet container
       shell: bash
       run: |

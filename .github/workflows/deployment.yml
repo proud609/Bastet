@@ -16,6 +16,9 @@ on:
 jobs:
   bastet:
     runs-on: ubuntu-latest
+    container:
+      image: docker:24.0.5
+      options: --memory="6g"
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
