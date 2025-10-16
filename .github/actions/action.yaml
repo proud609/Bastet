@@ -100,16 +100,7 @@ runs:
             --folder-path /app/scan-queue/ \
             --n8n-url http://n8n:5678 \
             --output-path /app/reports/ \
-            --report-name scan-report > scan.log 2>&1 || (
-          echo "::error::Scan command failed, fetching logs"
-          docker-compose -f docker-compose.cicd.yml logs bastet
-          exit 1
-        )
-    - name: Upload logs
-      uses: actions/upload-artifact@v4
-      with:
-        name: scan-debug-logs
-        path: scan.log
+            --report-name scan-report
     
     - name: Copy scan reports from container
       shell: bash
